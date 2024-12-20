@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静谧猎手</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
+    <header>
+        <button class="menu">&#9776;</button>
+        <h1><a href="{{ url_for('pages', page='home') }}">尖塔百科</a></h1>
+        <div class="nav">
+            <ul class="navlist">
+                <li class="btli"><a href="{{ url_for('pages', page='description') }}">关于尖塔</a></li>
+                <li class="btli"><a href="#">角色信息</a>
+                    <ul class="droplist">
+                        <li><a href="{{ url_for('pages', page='iron') }}">铁甲战士</a></li>
+                        <li><a href="{{ url_for('pages', page='slience') }}">静谧猎手</a></li>
+                        <li><a href="#">故障机器人</a></li>
+                        <li><a href="#">观者</a></li>
+                    </ul>
+                </li>
+                <li class="btli"><a href="#">百科大全</a>
+                    <ul class="droplist">
+                        <li><a href="#">卡牌总览</a></li>
+                        <li><a href="#">遗物收藏</a></li>
+                        <li><a href="#">怪物图鉴</a></li>
+                        <li><a href="#">药水小样</a></li>
+                    </ul>
+                </li>
+                <li class="btli"><a href="{{ url_for('pages', page='joke') }}">尖塔笑话</a></li>
+                <li class="btli"><a href="#">成就一览</a></li>
+            </ul>
+        </div>
+        </header>
+    <main>
+    </main>
+    <footer>
+        <div class = "ck">
+        <div class="claim">
+            <p style="font-size: 2.5vh;"><a href="https://sts.huijiwiki.com/wiki/首页">资料参考尖塔wiki<br></a></p>
+            <a href="#"><p style="font-size: 2.5vh;">© 2022-2024 Yuer<br></p></a>
+        </div>
+            <a href="https://github.com/Yuer-Chi/slaythespire_web"><p style="font-size: 2.5vh;">The repository used to create this website is available at </p></a>
+            <a href="https://github.com/Yuer-Chi/slaythespire_web"><p style="font-size: 2.5vh;">https://github.com/Yuer-Chi/slaythespire_web.</p></a>
+        </div>
+        <div class="follow">
+            <span>Follow&Contact Us</span>
+            <div class="logo">
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt="wb"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png"alt="wechat"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt="x"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt="o"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt="f"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="mail"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

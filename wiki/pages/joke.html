@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style_joke.css') }}">
+</head>
+<body>
+    <header>
+        <button class="menu">&#9776;</button>
+        <h1><a href="{{ url_for('pages', page='home') }}">尖塔百科</a></h1>
+        <div class="nav">
+            <ul class="navlist">
+                <li class="btli"><a href="{{ url_for('pages', page='description') }}">关于尖塔</a></li>
+                <li class="btli"><a href="#">角色信息</a>
+                    <ul class="droplist">
+                        <li><a href="{{ url_for('pages', page='iron') }}">铁甲战士</a></li>
+                        <li><a href="{{ url_for('pages', page='slience') }}">静谧猎手</a></li>
+                        <li><a href="#">故障机器人</a></li>
+                        <li><a href="#">观者</a></li>
+                    </ul>
+                </li>
+                <li class="btli"><a href="#">百科大全</a>
+                    <ul class="droplist">
+                        <li><a href="#">卡牌总览</a></li>
+                        <li><a href="#">遗物收藏</a></li>
+                        <li><a href="#">怪物图鉴</a></li>
+                        <li><a href="#">药水小样</a></li>
+                    </ul>
+                </li>
+                <li class="btli"><a href="{{ url_for('pages', page='joke') }}">尖塔笑话</a></li>
+                <li class="btli"><a href="#">成就一览</a></li>
+            </ul>
+        </div>
+        </header>
+    <main>
+        <h2>尖塔笑话</h2>
+        <hr>
+        <div class = 'joke1'>
+        <div class = 'text1'>
+            <p>观者喜欢夸机器人，她经常说，你长的就像我奶奶用鞋印做的蓝莓曲奇饼一样，真可爱。
+            可惜，故障机器人没有奶奶，也没吃过蓝莓曲奇饼，他只知道这是在夸他。</p><br>
+            <p>观者迟迟等不到故障机器人的回应，故障机器人如同雕塑一般，静静地看着她，不说一句话，眼里露出了某种晦涩的神色。</p><br>
+            <p>观者等了很久很久，也许是一万年，最后划落了一滴眼泪，她故作微笑，说：谢谢你，我亲爱的鞋印蓝莓曲奇饼同志，谢谢你陪伴我这么久。
+                随后观者离开了，离开了机器人的世界。</p><br>
+            <p>机器人想要伸手挽留，但是理智却告诉他时机未到。
+            终于，几万年后，机器人的眼中终于闪过了悲伤的色彩。</p><br>
+            <p>他终于启动完了，但是佳人已经不再。</p>
+        </div>
+        <div class = 'img1'>
+            <img src="{{ url_for('static', filename = 'images/joke1.jpg') }}" alt="机械降神">
+        </div>
+        </div>
+        <div class="joke2">
+            <div class = "img2">
+                <img src="{{ url_for('static', filename = 'images/joke2.jpg') }}" alt="黄焖鸡公煲">
+            </div>
+            <div class = 'text2'>
+            <p>鸡煲和唐僧师徒来到一条大河旁，
+                孙悟空一个筋斗云翻了过去，
+                猪八戒变成一头大猪冲了过去，
+                沙和尚潜入水中游了过去。</p>
+            <p>唐僧问:“鸡煲，我们怎么过去？”
+                鸡煲走上前，丢进去一张卡牌，唐僧十分不解。</p>
+            <p>
+            鸡煲:“等它集中掉光了，我们趁这条河不注意溜过去。”    
+            </p>
+            <br>
+            <br>
+            <p>鸡煲和观者走在路上，鸡煲问“集中，你懂不懂？”观者说不懂。</p>
+            <p>鸡煲说“那你就没有上限。”</p>
+            <p>鸡煲又问“冰球起防你懂不懂？”观者说不懂.</p>
+            <p>鸡煲说“那你会吃战损。”</p>
+            <p>这时候对面来了三只咔咔。</p>
+            <p>观者问“速杀，你懂不懂？”鸡煲说不懂。</p>
+            <p>观者“那你完了。”</p>
+            </div>
+        </div>
+        <div class = "joke3">
+            <div class = 'text3'>
+            <p>战士和鸡煲流落荒岛，战士说“我来生火，你去找吃的。”</p>
+            <p>于是战士很快点燃了篝火，却发现鸡煲呼呼大睡，没有去找吃的。</p>
+            <p>“鸡煲，你怎么不去找吃的？”</p>
+            <p>鸡煲起身，“习惯了。”</p>
+            <br>
+            <p>老师问鸡煲“鸡煲，你知道1加4等于多少吗？”</p>
+            <p>鸡煲摇了摇头。</p>
+            <p>老师说“你回去问你爸爸，明天告诉我。”</p>
+            <p>第二天，鸡煲回答老师:“老师，等于4。”</p>
+            <p>老师大怒:“不是等于5吗？”</p>
+            <p>鸡煲:“昨天的确等于5。”</p>
+            <br>
+            <p>猎人、战士和观者走到火堆，发现了躺在地上的鸡煲。</p>
+            <p>猎人说：“我觉得睡觉是很正常的，战损高休息是稳妥的选择。”</p>
+            <p>战士说：“我也觉得如此，特别是我抓了武装的时候，敲位并没有那么紧张。”</p>
+            <p>观者俯下身子看了看：“你们在说什么乱七八糟的，它好像死了。”</p>
+            <br>
+            <p>鸡煲忽然喜爱上了收藏卡牌，一日叫朋友过来参观。</p>
+            <p>“这是快速检索，可以过4张牌。”</p>
+            <p>“这是重编程，一费可以获得两点力量和敏捷。”</p>
+            <p>朋友点了点头“这收藏的卡牌都是极品，只有一样东西不太搭配。”</p>
+            <p>鸡煲问:“是什么不搭？”</p>
+            <p>朋友:“是你。”</p>
+        </div>
+        <div class = 'img3'>
+            <img src="{{ url_for('static', filename = 'images/joke3.jpg') }}" alt="吃甜甜圈">
+        </div>
+        </div>
+        <div class = 'joke4'>
+            <p>制作组查看杀戮尖塔的评价。</p>
+            <p>第一个说“这游戏太有趣了，组合又多又丰富。” 制作组说:“看来我们的战士设计的真好。”</p>
+            <p>第二个评论“这游戏太简单，随随便便就过了，而且套路单一。” 制作组说:“看来我们的观者做的不太平衡。”</p>
+            <p>第三个评论“这游戏就是一个笑话。”
+                制作组中的老总立刻站了起来:“把故障机器人的设计师给我开除。”</p>
+            <br>
+        </div>
+        <div class = 'joke5'>
+            <div class="text5">
+            <p>鸡煲与再生大头鏖战数合，只见大头每次猛击都被冰球一一化解，众咔咔一看，叹息道：“这回大头怕是要被鸡煲耗死了”，有一老咔咔说：“谁输谁赢，我去一问便知。”</p>
+            <p>不一会儿，老咔咔问完了回来，说：“大头必胜。”。众咔咔不解，“你问啥了？怎么就知道鸡煲输了？”</p>
+            <p>“我问鸡煲他是不是全尖塔最强的人，他回复说是的。”</p>
+            <p>“骄兵必败？”“不是，他开认知偏差了。”</p>
+            <br>
+            <p> 鸡煲路过一条河，感觉到集中-1，这时河神突然出现！</p>
+            <p>“诚实的鸡煲呦，你掉的是这个3点集中，还是这个2点集中，还是这个1点集中呢？”</p>
+            <p>鸡煲:“是1点集中。”</p>
+            <p>河神“真是个诚实的好孩子，那这-6点集中都送给你了！”</p>
+        </div>
+        <div class="img5">
+            <img src="{{ url_for('static', filename = 'images/joke5.jpg') }}" alt="偏差">
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class = "ck">
+        <div class="claim">
+            <p style="font-size: 2.5vh;"><a href="https://sts.huijiwiki.com/wiki/首页">资料参考尖塔wiki<br></a></p>
+            <a href="#"><p style="font-size: 2.5vh;">© 2022-2024 Yuer<br></p></a>
+        </div>
+            <a href="https://github.com/Yuer-Chi/slaythespire_web"><p style="font-size: 2.5vh;">The repository used to create this website is available at </p></a>
+            <a href="https://github.com/Yuer-Chi/slaythespire_web"><p style="font-size: 2.5vh;">https://github.com/Yuer-Chi/slaythespire_web.</p></a>
+        </div>
+        <div class="follow">
+            <span>Follow&Contact Us</span>
+            <div class="logo">
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt="wb"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png"alt="wechat"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt="x"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt="o"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt="f"></a>
+                <a href="#"><img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="mail"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
