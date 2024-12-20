@@ -103,11 +103,12 @@ footer{
 }
 main{
     background-color: #1b1b22;
-    margin-top: 80px;    /* 设置顶部边距 */
-    margin-right: 150px;  /* 设置右侧边距 */
-    margin-bottom: 0px; /* 设置底部边距 */
-    margin-left: 150px;   /* 设置左侧边距 */
-    padding-bottom: 30px;
+    margin-top: 9vh;
+    margin-right: 14vh;  
+    margin-bottom: 0vh; 
+    margin-left: 14vh;   
+    padding-bottom: 3vh;
+    width: 80%;
 }
 main a{
     text-decoration: none;

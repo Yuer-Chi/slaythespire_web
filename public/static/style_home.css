@@ -76,10 +76,10 @@ main{
     background-color: #1b1b22;
     margin-top: 9vh;
     margin-right: 14vh;  
-    margin-bottom: 0px; 
+    margin-bottom: 0vh; 
     margin-left: 14vh;   
     padding-bottom: 3vh;
-    
+    width: 80%;
 }
 main a{
     text-decoration: none;
