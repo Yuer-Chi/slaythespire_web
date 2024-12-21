@@ -81,6 +81,8 @@ main{
     padding-bottom: 3vh;
     width: 80%;
     color:white;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 main h2{
     font-size: 4vw;
@@ -98,6 +100,7 @@ main p{
 }
 .joke1{
     display: flex;
+    text-indent: 2em;
 }
 .joke1 img{
     width:30%;
