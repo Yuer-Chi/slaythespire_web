@@ -86,8 +86,8 @@ main{
 }
 main h2{
     font-size: 4vw;
-    padding-left: 2vw;
-    padding-top: 2vh;
+    padding-left: 4vw;
+    padding-top: 2.5vh;
 }
 main hr{
     margin: 3vh 4vh;
