@@ -37,7 +37,7 @@
     <main>
     <div class="lside">
         <ul>
-            <li>概况</li>
+            <li><div class='fh1'>概况</div></li>
             <li><div class="gs">游戏背景与故事</div></li>
             <li><div class="wf">游戏玩法</div></li>
             <li><div class="cl">游戏难度与策略</div></li>
@@ -244,6 +244,9 @@
     </footer>
 </body>
 <script>
+    document.querySelector('div.fh1').addEventListener('click',() =>{
+        window.scrollTo(0,0);
+    });
     document.querySelector('div.fh').addEventListener('click',() =>{
         window.scrollTo(0,0);
     });
